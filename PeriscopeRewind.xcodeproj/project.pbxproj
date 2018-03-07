@@ -15,12 +15,15 @@
 		731992CC20507D7900EB0771 /* PeriscopeRewindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992CB20507D7900EB0771 /* PeriscopeRewindTests.swift */; };
 		731992D720507D7900EB0771 /* PeriscopeRewindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992D620507D7900EB0771 /* PeriscopeRewindUITests.swift */; };
 		731992E52050815900EB0771 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992E42050815900EB0771 /* VideoViewController.swift */; };
-		73199781205089F200EB0771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73199780205089F200EB0771 /* ViewController.swift */; };
-		73199782205089F200EB0771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73199780205089F200EB0771 /* ViewController.swift */; };
-		73199783205089F200EB0771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73199780205089F200EB0771 /* ViewController.swift */; };
 		73D287E2205096A600ADBF63 /* Corgi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 73D287E1205096A600ADBF63 /* Corgi.mp4 */; };
 		73D287E3205096A600ADBF63 /* Corgi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 73D287E1205096A600ADBF63 /* Corgi.mp4 */; };
 		73D287E4205096A600ADBF63 /* Corgi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 73D287E1205096A600ADBF63 /* Corgi.mp4 */; };
+		73D287E62050A62500ADBF63 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D287E52050A62500ADBF63 /* TimelineView.swift */; };
+		73D287E72050A62500ADBF63 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D287E52050A62500ADBF63 /* TimelineView.swift */; };
+		73D287E82050A62500ADBF63 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D287E52050A62500ADBF63 /* TimelineView.swift */; };
+		73D287EA2050AB9700ADBF63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D287E92050AB9700ADBF63 /* HomeViewController.swift */; };
+		73D287EB2050AB9700ADBF63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D287E92050AB9700ADBF63 /* HomeViewController.swift */; };
+		73D287EC2050AB9700ADBF63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D287E92050AB9700ADBF63 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +58,9 @@
 		731992D620507D7900EB0771 /* PeriscopeRewindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriscopeRewindUITests.swift; sourceTree = "<group>"; };
 		731992D820507D7900EB0771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		731992E42050815900EB0771 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
-		73199780205089F200EB0771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73D287E1205096A600ADBF63 /* Corgi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Corgi.mp4; sourceTree = "<group>"; };
+		73D287E52050A62500ADBF63 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		73D287E92050AB9700ADBF63 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				731992E42050815900EB0771 /* VideoViewController.swift */,
-				73199780205089F200EB0771 /* ViewController.swift */,
+				73D287E92050AB9700ADBF63 /* HomeViewController.swift */,
 				73D287E1205096A600ADBF63 /* Corgi.mp4 */,
 				731992E72050854A00EB0771 /* resources */,
 				731992E62050815E00EB0771 /* ViewControllers */,
@@ -118,6 +122,7 @@
 				731992BF20507D7900EB0771 /* LaunchScreen.storyboard */,
 				731992C220507D7900EB0771 /* Info.plist */,
 				731992BA20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld */,
+				73D287E52050A62500ADBF63 /* TimelineView.swift */,
 			);
 			path = PeriscopeRewind;
 			sourceTree = "<group>";
@@ -291,10 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73199781205089F200EB0771 /* ViewController.swift in Sources */,
 				731992BC20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld in Sources */,
 				731992E52050815900EB0771 /* VideoViewController.swift in Sources */,
+				73D287E62050A62500ADBF63 /* TimelineView.swift in Sources */,
 				731992B420507D7900EB0771 /* AppDelegate.swift in Sources */,
+				73D287EA2050AB9700ADBF63 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73199782205089F200EB0771 /* ViewController.swift in Sources */,
+				73D287E72050A62500ADBF63 /* TimelineView.swift in Sources */,
 				731992CC20507D7900EB0771 /* PeriscopeRewindTests.swift in Sources */,
+				73D287EB2050AB9700ADBF63 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73199783205089F200EB0771 /* ViewController.swift in Sources */,
+				73D287E82050A62500ADBF63 /* TimelineView.swift in Sources */,
 				731992D720507D7900EB0771 /* PeriscopeRewindUITests.swift in Sources */,
+				73D287EC2050AB9700ADBF63 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

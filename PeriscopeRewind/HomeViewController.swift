@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  PeriscopeRewind
 //
 //  Created by Ryan Liszewski on 3/7/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
@@ -17,4 +17,5 @@ class ViewController: UIViewController {
 		let videoViewController =  VideoViewController(videoURL: videoURL)
 		present(videoViewController, animated: true, completion: nil)
 	}
+
 }

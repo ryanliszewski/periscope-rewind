@@ -19,9 +19,7 @@ class VideoViewController: UIViewController {
 	private var player: AVPlayer!
 	private var playerLayer: AVPlayerLayer!
 	
-	private var longPressGestureRecgonizer: UILongPressGestureRecognizer = {
-		return UILongPressGestureRecognizer (target: self, action: Selector("longPressed:"))
-	}()
+	private var longPressGestureRecgonizer: UILongPressGestureRecognizer!
 	
 	private let rewindDimView = UIVisualEffectView()
 	
@@ -43,14 +41,17 @@ class VideoViewController: UIViewController {
 		super.init(coder: aDecoder)
 	}
 	
-	//MARK: - 
+	//MARK: - View Layout
 	
 	override func loadView() {
 		super.loadView()
 		
 		view.backgroundColor = .black
 		view.layer.addSublayer(playerLayer)
-		
+		longPressGestureRecgonizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressed(gesture:)))
+	
+		view.addGestureRecognizer(longPressGestureRecgonizer)
+		view.addSubview(rewindDimView)
 		
 		
 	}
@@ -68,6 +69,24 @@ class VideoViewController: UIViewController {
 		super.viewDidLayoutSubviews()
 		
 		playerLayer.frame = view.bounds
+		rewindDimView.frame = view.bounds
 	}
+	
+	
+	@objc func longPressed(gesture: UILongPressGestureRecognizer){
 		
+		print("GESTURE was reached.")
+		
+		if gesture.state == .began {
+			player.pause()
+			UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut], animations: {self.rewindDimView.effect = UIBlurEffect(style: .dark)}, completion: nil)
+		} else if gesture.state == .changed {
+			
+		} else {
+			player.play()
+			UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut], animations: {self.rewindDimView.effect = nil}, completion: nil)
+		}
+		
+	}
+	
 }
