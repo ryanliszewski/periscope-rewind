@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		731992B420507D7900EB0771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992B320507D7900EB0771 /* AppDelegate.swift */; };
+		731992B620507D7900EB0771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992B520507D7900EB0771 /* ViewController.swift */; };
+		731992B920507D7900EB0771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731992B720507D7900EB0771 /* Main.storyboard */; };
+		731992BC20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 731992BA20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld */; };
+		731992BE20507D7900EB0771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731992BD20507D7900EB0771 /* Assets.xcassets */; };
+		731992C120507D7900EB0771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731992BF20507D7900EB0771 /* LaunchScreen.storyboard */; };
+		731992CC20507D7900EB0771 /* PeriscopeRewindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992CB20507D7900EB0771 /* PeriscopeRewindTests.swift */; };
+		731992D720507D7900EB0771 /* PeriscopeRewindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731992D620507D7900EB0771 /* PeriscopeRewindUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		731992C820507D7900EB0771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 731992A820507D7900EB0771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 731992AF20507D7900EB0771;
+			remoteInfo = PeriscopeRewind;
+		};
+		731992D320507D7900EB0771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 731992A820507D7900EB0771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 731992AF20507D7900EB0771;
+			remoteInfo = PeriscopeRewind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		731992B020507D7900EB0771 /* PeriscopeRewind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriscopeRewind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		731992B320507D7900EB0771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		731992B520507D7900EB0771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		731992B820507D7900EB0771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		731992BB20507D7900EB0771 /* PeriscopeRewind.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeriscopeRewind.xcdatamodel; sourceTree = "<group>"; };
+		731992BD20507D7900EB0771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		731992C020507D7900EB0771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		731992C220507D7900EB0771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731992C720507D7900EB0771 /* PeriscopeRewindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriscopeRewindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		731992CB20507D7900EB0771 /* PeriscopeRewindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriscopeRewindTests.swift; sourceTree = "<group>"; };
+		731992CD20507D7900EB0771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731992D220507D7900EB0771 /* PeriscopeRewindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriscopeRewindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		731992D620507D7900EB0771 /* PeriscopeRewindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriscopeRewindUITests.swift; sourceTree = "<group>"; };
+		731992D820507D7900EB0771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		731992AD20507D7900EB0771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731992C420507D7900EB0771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731992CF20507D7900EB0771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		731992A720507D7900EB0771 = {
+			isa = PBXGroup;
+			children = (
+				731992B220507D7900EB0771 /* PeriscopeRewind */,
+				731992CA20507D7900EB0771 /* PeriscopeRewindTests */,
+				731992D520507D7900EB0771 /* PeriscopeRewindUITests */,
+				731992B120507D7900EB0771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		731992B120507D7900EB0771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				731992B020507D7900EB0771 /* PeriscopeRewind.app */,
+				731992C720507D7900EB0771 /* PeriscopeRewindTests.xctest */,
+				731992D220507D7900EB0771 /* PeriscopeRewindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		731992B220507D7900EB0771 /* PeriscopeRewind */ = {
+			isa = PBXGroup;
+			children = (
+				731992B320507D7900EB0771 /* AppDelegate.swift */,
+				731992B520507D7900EB0771 /* ViewController.swift */,
+				731992B720507D7900EB0771 /* Main.storyboard */,
+				731992BD20507D7900EB0771 /* Assets.xcassets */,
+				731992BF20507D7900EB0771 /* LaunchScreen.storyboard */,
+				731992C220507D7900EB0771 /* Info.plist */,
+				731992BA20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld */,
+			);
+			path = PeriscopeRewind;
+			sourceTree = "<group>";
+		};
+		731992CA20507D7900EB0771 /* PeriscopeRewindTests */ = {
+			isa = PBXGroup;
+			children = (
+				731992CB20507D7900EB0771 /* PeriscopeRewindTests.swift */,
+				731992CD20507D7900EB0771 /* Info.plist */,
+			);
+			path = PeriscopeRewindTests;
+			sourceTree = "<group>";
+		};
+		731992D520507D7900EB0771 /* PeriscopeRewindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				731992D620507D7900EB0771 /* PeriscopeRewindUITests.swift */,
+				731992D820507D7900EB0771 /* Info.plist */,
+			);
+			path = PeriscopeRewindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		731992AF20507D7900EB0771 /* PeriscopeRewind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731992DB20507D7900EB0771 /* Build configuration list for PBXNativeTarget "PeriscopeRewind" */;
+			buildPhases = (
+				731992AC20507D7900EB0771 /* Sources */,
+				731992AD20507D7900EB0771 /* Frameworks */,
+				731992AE20507D7900EB0771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeriscopeRewind;
+			productName = PeriscopeRewind;
+			productReference = 731992B020507D7900EB0771 /* PeriscopeRewind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		731992C620507D7900EB0771 /* PeriscopeRewindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731992DE20507D7900EB0771 /* Build configuration list for PBXNativeTarget "PeriscopeRewindTests" */;
+			buildPhases = (
+				731992C320507D7900EB0771 /* Sources */,
+				731992C420507D7900EB0771 /* Frameworks */,
+				731992C520507D7900EB0771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				731992C920507D7900EB0771 /* PBXTargetDependency */,
+			);
+			name = PeriscopeRewindTests;
+			productName = PeriscopeRewindTests;
+			productReference = 731992C720507D7900EB0771 /* PeriscopeRewindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		731992D120507D7900EB0771 /* PeriscopeRewindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731992E120507D7900EB0771 /* Build configuration list for PBXNativeTarget "PeriscopeRewindUITests" */;
+			buildPhases = (
+				731992CE20507D7900EB0771 /* Sources */,
+				731992CF20507D7900EB0771 /* Frameworks */,
+				731992D020507D7900EB0771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				731992D420507D7900EB0771 /* PBXTargetDependency */,
+			);
+			name = PeriscopeRewindUITests;
+			productName = PeriscopeRewindUITests;
+			productReference = 731992D220507D7900EB0771 /* PeriscopeRewindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		731992A820507D7900EB0771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ImThere;
+				TargetAttributes = {
+					731992AF20507D7900EB0771 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					731992C620507D7900EB0771 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 731992AF20507D7900EB0771;
+					};
+					731992D120507D7900EB0771 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 731992AF20507D7900EB0771;
+					};
+				};
+			};
+			buildConfigurationList = 731992AB20507D7900EB0771 /* Build configuration list for PBXProject "PeriscopeRewind" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 731992A720507D7900EB0771;
+			productRefGroup = 731992B120507D7900EB0771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				731992AF20507D7900EB0771 /* PeriscopeRewind */,
+				731992C620507D7900EB0771 /* PeriscopeRewindTests */,
+				731992D120507D7900EB0771 /* PeriscopeRewindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		731992AE20507D7900EB0771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731992C120507D7900EB0771 /* LaunchScreen.storyboard in Resources */,
+				731992BE20507D7900EB0771 /* Assets.xcassets in Resources */,
+				731992B920507D7900EB0771 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731992C520507D7900EB0771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731992D020507D7900EB0771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		731992AC20507D7900EB0771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731992BC20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld in Sources */,
+				731992B620507D7900EB0771 /* ViewController.swift in Sources */,
+				731992B420507D7900EB0771 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731992C320507D7900EB0771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731992CC20507D7900EB0771 /* PeriscopeRewindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731992CE20507D7900EB0771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731992D720507D7900EB0771 /* PeriscopeRewindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		731992C920507D7900EB0771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 731992AF20507D7900EB0771 /* PeriscopeRewind */;
+			targetProxy = 731992C820507D7900EB0771 /* PBXContainerItemProxy */;
+		};
+		731992D420507D7900EB0771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 731992AF20507D7900EB0771 /* PeriscopeRewind */;
+			targetProxy = 731992D320507D7900EB0771 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		731992B720507D7900EB0771 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731992B820507D7900EB0771 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		731992BF20507D7900EB0771 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731992C020507D7900EB0771 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		731992D920507D7900EB0771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		731992DA20507D7900EB0771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		731992DC20507D7900EB0771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34WD9C788A;
+				INFOPLIST_FILE = PeriscopeRewind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanLiszewski.PeriscopeRewind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		731992DD20507D7900EB0771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34WD9C788A;
+				INFOPLIST_FILE = PeriscopeRewind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanLiszewski.PeriscopeRewind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		731992DF20507D7900EB0771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34WD9C788A;
+				INFOPLIST_FILE = PeriscopeRewindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanLiszewski.PeriscopeRewindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeriscopeRewind.app/PeriscopeRewind";
+			};
+			name = Debug;
+		};
+		731992E020507D7900EB0771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34WD9C788A;
+				INFOPLIST_FILE = PeriscopeRewindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanLiszewski.PeriscopeRewindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeriscopeRewind.app/PeriscopeRewind";
+			};
+			name = Release;
+		};
+		731992E220507D7900EB0771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34WD9C788A;
+				INFOPLIST_FILE = PeriscopeRewindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanLiszewski.PeriscopeRewindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeriscopeRewind;
+			};
+			name = Debug;
+		};
+		731992E320507D7900EB0771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34WD9C788A;
+				INFOPLIST_FILE = PeriscopeRewindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanLiszewski.PeriscopeRewindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeriscopeRewind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		731992AB20507D7900EB0771 /* Build configuration list for PBXProject "PeriscopeRewind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731992D920507D7900EB0771 /* Debug */,
+				731992DA20507D7900EB0771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731992DB20507D7900EB0771 /* Build configuration list for PBXNativeTarget "PeriscopeRewind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731992DC20507D7900EB0771 /* Debug */,
+				731992DD20507D7900EB0771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731992DE20507D7900EB0771 /* Build configuration list for PBXNativeTarget "PeriscopeRewindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731992DF20507D7900EB0771 /* Debug */,
+				731992E020507D7900EB0771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731992E120507D7900EB0771 /* Build configuration list for PBXNativeTarget "PeriscopeRewindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731992E220507D7900EB0771 /* Debug */,
+				731992E320507D7900EB0771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		731992BA20507D7900EB0771 /* PeriscopeRewind.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				731992BB20507D7900EB0771 /* PeriscopeRewind.xcdatamodel */,
+			);
+			currentVersion = 731992BB20507D7900EB0771 /* PeriscopeRewind.xcdatamodel */;
+			path = PeriscopeRewind.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 731992A820507D7900EB0771 /* Project object */;
+}
