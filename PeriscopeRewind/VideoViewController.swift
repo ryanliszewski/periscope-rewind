@@ -23,6 +23,10 @@ class VideoViewController: UIViewController {
 	
 	private let rewindDimView = UIVisualEffectView()
 	
+	private let rewindContentView = UIView()
+	private let rewindTimelineView = TimelineView()
+	private var previousLocationX: CGFloat = 0.0
+	
 	//MARK: -
 	
 	init(videoURL: URL){
@@ -53,6 +57,11 @@ class VideoViewController: UIViewController {
 		view.addGestureRecognizer(longPressGestureRecgonizer)
 		view.addSubview(rewindDimView)
 		
+		rewindContentView.alpha = 0.0
+		
+		rewindContentView.addSubview(rewindTimelineView)
+		view.addSubview(rewindContentView)
+		rewindTimelineView.duration = CMTimeGetSeconds(asset.duration)
 		
 	}
 	
@@ -70,23 +79,37 @@ class VideoViewController: UIViewController {
 		
 		playerLayer.frame = view.bounds
 		rewindDimView.frame = view.bounds
+		
+		rewindContentView.frame = view.bounds
+		rewindTimelineView.frame = CGRect(x: 0.0, y: view.bounds.height - 150.0, width: view.bounds.width, height: 10.0)
 	}
 	
 	
 	@objc func longPressed(gesture: UILongPressGestureRecognizer){
 		
-		print("GESTURE was reached.")
+		let location = gesture.location(in: gesture.view!)
+		rewindTimelineView.zoom = (location.y - rewindTimelineView.center.y - 10.0) / 30.0
 		
 		if gesture.state == .began {
 			player.pause()
-			UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut], animations: {self.rewindDimView.effect = UIBlurEffect(style: .dark)}, completion: nil)
-		} else if gesture.state == .changed {
 			
+			rewindTimelineView.initialTime = CMTimeGetSeconds(playerItem.currentTime())
+			
+			UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut], animations: {self.rewindDimView.effect = UIBlurEffect(style: .dark)
+				self.rewindContentView.alpha = 1.0
+			}, completion: nil)
+			
+		} else if gesture.state == .changed {
+			rewindTimelineView.rewindByDistance(distance: previousLocationX - location.x)
 		} else {
 			player.play()
-			UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut], animations: {self.rewindDimView.effect = nil}, completion: nil)
+			UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut], animations: {self.rewindDimView.effect = nil
+				self.rewindContentView.alpha = 0.0
+				}, completion: nil)
 		}
 		
+		if previousLocationX != location.x {
+			previousLocationX = location.x
+		}
 	}
-	
 }
